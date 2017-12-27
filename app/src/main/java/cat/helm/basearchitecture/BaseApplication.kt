@@ -21,6 +21,7 @@ class BaseApplication : Application(), HasActivityInjector {
     }
 
 
+
     override fun onCreate() {
         super.onCreate()
         DaggerApplicationComponent

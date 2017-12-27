@@ -1,4 +1,4 @@
-package cat.helm.basearchitecture.customMatchers
+package cat.helm.basearchitecture.customMatcher
 
 import android.support.test.espresso.Root
 import android.view.WindowManager

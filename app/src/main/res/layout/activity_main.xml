@@ -5,6 +5,78 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         tools:context="cat.helm.basearchitecture.ui.main.MainActivity">
+
+
+    <TextView
+            android:text="Log in to your account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/username"/>
+
+    <Button
+            android:text="Log in"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:textColor="#3891ee"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:id="@+id/loginButton"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/forgotPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"/>
+
+    <TextView
+            android:text="forgot password?"
+            android:textSize="17sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/forgotPassword"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/password"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/loginButton"
+            app:layout_constraintEnd_toEndOf="@+id/loginButton"
+            app:layout_constraintStart_toStartOf="@+id/loginButton"
+            />
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:hint="Username or email"
+            android:id="@+id/username"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            />
 
 </android.support.constraint.ConstraintLayout>

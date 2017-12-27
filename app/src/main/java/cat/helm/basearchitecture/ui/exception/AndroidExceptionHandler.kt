@@ -3,8 +3,9 @@ package cat.helm.basearchitecture.ui.exception
 import android.content.Context
 import cat.helm.basearchitecture.R
 import cat.helm.basearchitecture.data.dependencyinjection.qualifier.ApplicationContext
-import cat.helm.basearchitecture.model.exceptions.NetworkException
 import cat.helm.basearchitecture.ui.base.BaseView
+import cat.helm.ureentool.model.exceptions.NetworkException
+import cat.helm.ureentool.ui.base.ExceptionHandler
 import dagger.Reusable
 import javax.inject.Inject
 
